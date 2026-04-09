@@ -1,7 +1,7 @@
 import React from "react";
 import { Phone, MessageCircle } from "lucide-react";
 import { Link } from "react-router-dom";
-import img from "/Users/anandbahaduryadav/Documents/AthravAgricure/Landing-Page/src/assets/icons/AathravLogo _ COLOR.png";
+import img from "../assets/icons/logo.png";
 
 const Navbar = () => {
   return (
