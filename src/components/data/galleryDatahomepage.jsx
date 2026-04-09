@@ -18,7 +18,7 @@ export const galleryItems = [
     title: "President",
     category: "Minister Image",
     type: "image",
-    thumbnail: "https://images.unsplash.com/photo-1560250097-0b93528c311a",
+    thumbnail: "src/assets/images/8 MINISTER PHOTO WITH NAME/1.PRESIDENT.jpeg",
     description: "Meeting with President"
   },
   {
@@ -26,7 +26,7 @@ export const galleryItems = [
     title: "Prime Minister",
     category: "Minister Image",
     type: "image",
-    thumbnail: "https://images.unsplash.com/photo-1551836022-d5d88e9218df",
+    thumbnail: "src/assets/images/8 MINISTER PHOTO WITH NAME/2.PRIME MINISTER.jpeg",
     description: "Interaction with Prime Minister"
   },
   {
@@ -34,7 +34,7 @@ export const galleryItems = [
     title: "Chief Minister",
     category: "Minister Image",
     type: "image",
-    thumbnail: "https://images.unsplash.com/photo-1544723795-3fb6469f5b39",
+    thumbnail: "src/assets/images/8 MINISTER PHOTO WITH NAME/4.CM -BIHAR.jpeg",
     description: "Meeting with CM"
   },
   {
@@ -42,15 +42,15 @@ export const galleryItems = [
     title: "Deputy CM & Minister",
     category: "Minister Image",
     type: "image",
-    thumbnail: "https://images.unsplash.com/photo-1524504388940-b1c1722653e1",
+    thumbnail: "src/assets/images/8 MINISTER PHOTO WITH NAME/6. DEPUTY CM AND MEDIACAL DEUCTION MINISTER- MR ALLA KALI KRISHNA SRINIVAS.jpeg",
     description: "Discussion with Deputy CM"
   },
   {
     id: 5,
-    title: "Central Minister Meeting",
+    title: "Nepal Minister Meeting",
     category: "Minister Image",
     type: "image",
-    thumbnail: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7",
+    thumbnail: "src/assets/images/8 MINISTER PHOTO WITH NAME/nepal minister.jpeg",
     description: "Government interaction"
   },
 
@@ -60,7 +60,7 @@ export const galleryItems = [
     title: "State Social Excellence Award",
     category: "Award Name",
     type: "image",
-    thumbnail: "https://images.unsplash.com/photo-1573497161161-c3c0cfa1d1e1",
+    thumbnail: "src/assets/homeimage/9. GOVERNER OF HIMANCHAL PRADESH- KALRAJ MISHRA.jpeg",
     description: "Awarded for social excellence"
   },
   {
@@ -68,7 +68,7 @@ export const galleryItems = [
     title: "Best Social Activity Award",
     category: "Award Name",
     type: "image",
-    thumbnail: "https://images.unsplash.com/photo-1551836022-4c4c79ecde51",
+    thumbnail: "src/assets/homeimage/7.AGRICULTURE MINISTER - MR SINGAREDDY NIRANJAN REDDY.jpeg",
     description: "Recognized by MSME"
   },
   {
@@ -76,7 +76,7 @@ export const galleryItems = [
     title: "Fastest Growing Company",
     category: "Award Name",
     type: "image",
-    thumbnail: "https://images.unsplash.com/photo-1521737604893-d14cc237f11d",
+    thumbnail: "src/assets/homeimage/9. GOVERNER OF HIMANCHAL PRADESH- KALRAJ MISHRA.jpeg",
     description: "Growth achievement"
   },
 
@@ -86,7 +86,7 @@ export const galleryItems = [
     title: "CSR Award",
     category: "CSR Award",
     type: "image",
-    thumbnail: "https://images.unsplash.com/photo-1523240795612-9a054b0db644",
+    thumbnail: "src/assets/homeimage/10. MSME Central Cabinet Minister - Kalraj Mishraji.jpeg",
     description: "CSR excellence"
   },
 
@@ -96,7 +96,7 @@ export const galleryItems = [
     title: "Export Excellence",
     category: "Export Excellence",
     type: "image",
-    thumbnail: "https://images.unsplash.com/photo-1492724441997-5dc865305da7",
+    thumbnail: "src/assets/homeimage/11. AYUSH MINISTER- SATISH CHAND SHARMA.jpeg",
     description: "Export performance"
   },
 
@@ -106,7 +106,7 @@ export const galleryItems = [
     title: "Innovation Award",
     category: "Innovation Award",
     type: "image",
-    thumbnail: "https://images.unsplash.com/photo-1505373877841-8d25f7d46678",
+    thumbnail: "src/assets/homeimage/13.UP RAJYPAL RAM NAIK.jpeg",
     description: "Innovation in agriculture"
   },
 
@@ -116,7 +116,7 @@ export const galleryItems = [
     title: "Brand Excellence Award",
     category: "Brand Awards",
     type: "image",
-    thumbnail: "https://images.unsplash.com/photo-1552664730-d307ca884978",
+    thumbnail: "src/assets/homeimage/Cheif Minister Madhya Pradesh.jpg",
     description: "Brand growth"
   },
 
@@ -126,7 +126,7 @@ export const galleryItems = [
     title: "Agriculture Minister Meeting",
     category: "Minister Image",
     type: "image",
-    thumbnail: "https://images.unsplash.com/photo-1507679799987-c73779587ccf",
+    thumbnail: "src/assets/homeimage/GOVERNER UP- RAM NAIK PRESTIGIOUS CERTIFICATE AWARD.jpeg",
     description: ""
   },
   {
@@ -134,7 +134,7 @@ export const galleryItems = [
     title: "Government Official Visit",
     category: "Minister Image",
     type: "image",
-    thumbnail: "https://images.unsplash.com/photo-1525182008055-f88b95ff7980",
+    thumbnail: "src/assets/homeimage/pradhan mantri - Mr. Narendra Modi.jpeg",
     description: ""
   },
   {
@@ -142,7 +142,7 @@ export const galleryItems = [
     title: "Governor Interaction",
     category: "Minister Image",
     type: "image",
-    thumbnail: "https://images.unsplash.com/photo-1547425260-76bcadfb4f2c",
+    thumbnail: "src/assets/homeimage/Rajyapal- Mr. Radheyshyam Yadav.jpeg",
     description: ""
   },
   {
@@ -150,7 +150,7 @@ export const galleryItems = [
     title: "Cabinet Minister Meeting",
     category: "Minister Image",
     type: "image",
-    thumbnail: "https://images.unsplash.com/photo-1522071820081-009f0129c71c",
+    thumbnail: "src/assets/images/ChatGPT Image Apr 4, 2026, 04_25_52 PM.png",
     description: ""
   },
   {
@@ -158,7 +158,7 @@ export const galleryItems = [
     title: "Health Minister Visit",
     category: "Minister Image",
     type: "image",
-    thumbnail: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4",
+    thumbnail: "src/assets/homeimage/WhatsApp Image 2026-02-28 at 12.22.42 PM (1).jpeg",
     description: ""
   },
   {
@@ -166,7 +166,7 @@ export const galleryItems = [
     title: "Government Ceremony",
     category: "Minister Image",
     type: "image",
-    thumbnail: "https://images.unsplash.com/photo-1485217988980-11786ced9454",
+    thumbnail: "src/assets/homeimage/WhatsApp Image 2026-02-28 at 1.56.51 PM (2).jpeg",
     description: ""
   }
 ];
