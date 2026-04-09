@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import brochure from "../assets/6__Athrav-Brochure-2022-Hindi-Final-CMP-5_compressed.pdf";
+import heroImage from "../assets/fertilizer.png"; // replace with your actual image path
 import { Download } from "lucide-react";
 
 const Hero = () => {
@@ -59,38 +60,18 @@ const Hero = () => {
           </motion.div>
         </motion.div>
 
-        {/* RIGHT FORM */}
+        {/* RIGHT IMAGE */}
         <motion.div
           initial={{ opacity: 0, x: 80 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.7 }}
-          className="backdrop-blur-xl bg-white/10 border border-white/20 rounded-2xl p-6 md:p-8 shadow-2xl w-full max-w-md mx-auto md:ml-auto mt-8 md:mt-0"
+          className="w-full max-w-md mx-auto md:ml-auto mt-8 md:mt-0 rounded-2xl overflow-hidden shadow-2xl"
         >
-          <h2 className="text-xl md:text-2xl font-bold text-white text-center mb-5 md:mb-6">
-            Become a Partner
-          </h2>
-
-          <form className="space-y-3 md:space-y-4">
-            {["Name", "Mobile", "Email", "Pincode"].map((item, i) => (
-              <input
-                key={i}
-                placeholder={item}
-                className="w-full p-2.5 md:p-3 rounded-lg bg-white/20 text-white placeholder-gray-300 border border-white/30 focus:outline-none focus:ring-2 focus:ring-green-400 text-sm"
-              />
-            ))}
-
-            <select className="w-full p-2.5 md:p-3 rounded-lg bg-white/20 text-white border border-white/30 text-sm">
-              <option>State</option>
-            </select>
-
-            <select className="w-full p-2.5 md:p-3 rounded-lg bg-white/20 text-white border border-white/30 text-sm">
-              <option>City</option>
-            </select>
-
-            <button className="w-full bg-green-500 text-black font-semibold py-2.5 md:py-3 rounded-lg hover:bg-green-400 transition text-sm md:text-base">
-              Get Started
-            </button>
-          </form>
+          <img
+            src={heroImage}
+            alt="Hero"
+            className="w-full h-full object-cover rounded-2xl"
+          />
         </motion.div>
 
       </div>
@@ -102,7 +83,8 @@ const Hero = () => {
           target="_blank"
           rel="noopener noreferrer"
           download
-          className="flex items-center gap-2 bg-green-500 text-black px-4 md:px-5 py-2.5 md:py-3 rounded-full shadow-lg hover:scale-105 transition text-sm">
+          className="flex items-center gap-2 bg-green-500 text-black px-4 md:px-5 py-2.5 md:py-3 rounded-full shadow-lg hover:scale-105 transition text-sm"
+        >
           <Download size={18} />
           Brochure
         </a>

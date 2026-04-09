@@ -1,6 +1,7 @@
 import React from "react";
 import { Phone, MessageCircle } from "lucide-react";
 import { Link } from "react-router-dom";
+import img from "/Users/anandbahaduryadav/Documents/AthravAgricure/Landing-Page/src/assets/icons/AathravLogo _ COLOR.png";
 
 const Navbar = () => {
   return (
@@ -16,7 +17,7 @@ const Navbar = () => {
          {/* Logo */}
          <Link to="/" className="flex items-center">
             <img
-              src="src/assets/AathravLogo___COLOR-removebg-preview (1).png"
+              src={img}
               alt="Athrav Agricure Logo"
               className="h-20 w-30 object-contain"
             />

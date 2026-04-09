@@ -1,5 +1,13 @@
 // src/data/productsData.js
 
+// ================= IMPORT PRODUCT IMAGES =================
+import npkFertilizer from "/Users/anandbahaduryadav/Documents/AthravAgricure/Landing-Page/src/assets/productImage/Bags Mock up/Prom Front.jpg";
+import organicCompost from "/Users/anandbahaduryadav/Documents/AthravAgricure/Landing-Page/src/assets/productImage/Bags Mock up/IMG-20230711-WA0105 - Copy.jpg";
+import bioFertilizer from "/Users/anandbahaduryadav/Documents/AthravAgricure/Landing-Page/src/assets/productImage/Bags Mock up/IMG-20230711-WA0105 - Copy.jpg";
+import growthBooster from "/Users/anandbahaduryadav/Documents/AthravAgricure/Landing-Page/src/assets/productImage/Bags Mock up/IMG-20230711-WA0105 - Copy.jpg";
+import micronutrientMix from "/Users/anandbahaduryadav/Documents/AthravAgricure/Landing-Page/src/assets/productImage/Bags Mock up/IMG-20230711-WA0105 - Copy.jpg";
+import cropProtection from "/Users/anandbahaduryadav/Documents/AthravAgricure/Landing-Page/src/assets/productImage/Bags Mock up/IMG-20230711-WA0105 - Copy.jpg";
+
 // 🔥 Helper function
 const getCategoryFromImage = (imagePath) => {
   return imagePath.toLowerCase().includes("bag")
@@ -7,43 +15,43 @@ const getCategoryFromImage = (imagePath) => {
     : "Product Photo";
 };
 
-// ✅ Dummy product data (ONLINE IMAGES)
+// ✅ Raw product data
 const rawProducts = [
   {
     id: 1,
     title: "Premium NPK Fertilizer",
     description: "Balanced NPK fertilizer for maximum crop yield and soil health",
-    image: "https://images.unsplash.com/photo-1589927986089-35812388d1f4"
+    image: npkFertilizer
   },
   {
     id: 2,
     title: "Organic Compost",
     description: "Eco-friendly organic compost for sustainable farming",
-    image: "https://images.unsplash.com/photo-1592982537447-6f2b3d3bdb9c"
+    image: organicCompost
   },
   {
     id: 3,
     title: "Bio Fertilizer",
     description: "Microbial solution to enhance soil fertility naturally",
-    image: "https://images.unsplash.com/photo-1501004318641-b39e6451bec6"
+    image: bioFertilizer
   },
   {
     id: 4,
     title: "Plant Growth Booster",
     description: "Advanced growth enhancer for faster and healthier crops",
-    image: "https://images.unsplash.com/photo-1464226184884-fa280b87c399"
+    image: growthBooster
   },
   {
     id: 5,
     title: "Micronutrient Mix",
     description: "Essential nutrients to prevent deficiencies in crops",
-    image: "https://images.unsplash.com/photo-1471193945509-9ad0617afabf"
+    image: micronutrientMix
   },
   {
     id: 6,
     title: "Crop Protection Solution",
     description: "Protect crops from pests and diseases effectively",
-    image: "https://images.unsplash.com/photo-1500595046743-cd271d694d30"
+    image: cropProtection
   }
 ];
 
