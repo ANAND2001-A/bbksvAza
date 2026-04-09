@@ -65,5 +65,5 @@ export const galleryItems = [
   { id: 15, title: "Governor Interaction", category: "Minister Image", type: "image", thumbnail: governorInteraction, description: "" },
   { id: 16, title: "Cabinet Minister Meeting", category: "Minister Image", type: "image", thumbnail: cabinetMinister, description: "" },
   { id: 17, title: "Health Minister Visit", category: "Minister Image", type: "image", thumbnail: healthMinister, description: "" },
-  { id: 18, title: "Government Ceremony", category: "Minister Image", type: "image", thumbnail: govtCeremony, description: "" },
+  { id: 18, title: "Government Ceremony", category: "Minister Image", type: "image", thumbnail: govtCeremony, description: "s" },
 ];
