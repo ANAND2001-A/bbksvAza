@@ -1,37 +1,26 @@
+// src/components/ProductSlider.jsx
 import React, { useState, useEffect } from "react";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
+
+// ✅ Import images
+import img1 from "../assets/productImage/Bags Mock up/4.jpg";
+import img2 from "../assets/productImage/Bags Mock up/4.jpg";
+import img3 from "../assets/productImage/Bags Mock up/4.jpg";
+import img4 from "../assets/productImage/Bags Mock up/4.jpg";
+import img5 from "../assets/productImage/Bags Mock up/4.jpg";
 
 const products = [
-  {
-    id: 1,
-    name: "NPK",
-    image: "src/assets/productImage/Bags Mock up/IMG-20230711-WA0105 - Copy.jpg",
-  },
-  {
-    id: 2,
-    name: "PROM",
-    image: "src/assets/productImage/Bags Mock up/Prom Front.jpg",
-  },
-  {
-    id: 3,
-    name: "Sulphur",
-    image: "src/assets/productImage/Lucknow Factor Products/IMG-20230711-WA0058.jpg",
-  },
-  {
-    id: 4,
-    name: "AN-84",
-    image: "src/assets/productImage/Lucknow Factor Products/IMG-20230711-WA0076.jpg",
-  },
-  {
-    id: 5,
-    name: "Raizobiyam",
-    image: "src/assets/productImage/Lucknow Factor Products/WhatsApp Image 2024-03-17 at 21.21.04_94b12582.jpg",
-  },
+  { id: 1, name: "NPK", image: img1 },
+  { id: 2, name: "PROM", image: img2 },
+  { id: 3, name: "Sulphur", image: img3 },
+  { id: 4, name: "AN-84", image: img4 },
+  { id: 5, name: "Raizobiyam", image: img5 },
 ];
 
 const ProductSlider = () => {
   const [current, setCurrent] = useState(0);
 
+  // 🔄 Auto slide every 4 seconds
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrent((prev) => (prev + 1) % products.length);
@@ -39,6 +28,7 @@ const ProductSlider = () => {
     return () => clearInterval(interval);
   }, []);
 
+  // Helper: get position class for animation
   const getPosition = (index) => {
     if (index === current) return "center";
     if (index === (current + 1) % products.length) return "right";
@@ -49,7 +39,6 @@ const ProductSlider = () => {
   return (
     <section className="bg-[#272861] py-24 text-white overflow-hidden">
       <div className="max-w-7xl mx-auto px-6 text-center">
-
         {/* Heading */}
         <motion.h2
           initial={{ opacity: 0, y: -40 }}
@@ -59,67 +48,52 @@ const ProductSlider = () => {
           Our Products
         </motion.h2>
 
-        {/* Showcase */}
+        {/* Slider */}
         <div className="relative flex justify-center items-center h-[400px] md:h-[450px]">
-
           {products.map((item, index) => {
             const position = getPosition(index);
 
             return (
-              <motion.div
-                key={item.id}
-                initial={{ opacity: 0, scale: 0.8 }}
-                animate={{
-                  opacity:
-                    position === "center"
-                      ? 1
-                      : position === "left" || position === "right"
-                      ? 0.6
-                      : 0,
-                  scale:
-                    position === "center"
-                      ? 1.1
-                      : position === "left" || position === "right"
-                      ? 0.9
-                      : 0.7,
-                  x:
-                    position === "center"
-                      ? 0
-                      : position === "left"
-                      ? -260
-                      : position === "right"
-                      ? 260
-                      : 0,
-                }}
-                transition={{ duration: 0.6 }}
-                className="absolute w-[280px] md:w-[320px]"
-              >
-                {/* Card */}
-                <div className="relative rounded-2xl overflow-hidden border border-white/10 bg-white/5 backdrop-blur-xl shadow-xl group">
-
-                  {/* Image */}
-                  <div className="relative h-[260px] md:h-[300px] bg-white/10 flex items-center justify-center overflow-hidden">
-                    <img
-                      src={item.image}
-                      alt={item.name}
-                      className="max-h-full max-w-full object-contain transition duration-500 group-hover:scale-105"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
-                  </div>
-
-                  {/* Content */}
-                  <div className="p-5 text-center">
-                    <h3 className="text-xl font-semibold text-white">
-                      {item.name}
-                    </h3>
-                    <div className="mt-3 h-[2px] w-0 bg-green-400 mx-auto group-hover:w-16 transition-all duration-300"></div>
-                  </div>
-
-                </div>
-              </motion.div>
+              <AnimatePresence key={item.id}>
+                {position !== "hidden" && (
+                  <motion.div
+                    initial={{ opacity: 0, scale: 0.8, x: 0 }}
+                    animate={{
+                      opacity: position === "center" ? 1 : 0.6,
+                      scale: position === "center" ? 1.1 : 0.9,
+                      x:
+                        position === "center"
+                          ? 0
+                          : position === "left"
+                          ? -260
+                          : 260,
+                    }}
+                    exit={{ opacity: 0, scale: 0.7 }}
+                    transition={{ duration: 0.6 }}
+                    className="absolute w-[280px] md:w-[320px]"
+                  >
+                    {/* Card */}
+                    <div className="relative rounded-2xl overflow-hidden border border-white/10 bg-white/5 backdrop-blur-xl shadow-xl group">
+                      {/* Image */}
+                      <div className="relative h-[260px] md:h-[300px] bg-white/10 flex items-center justify-center overflow-hidden">
+                        <img
+                          src={item.image}
+                          alt={item.name}
+                          className="max-h-full max-w-full object-contain transition duration-500 group-hover:scale-105"
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
+                      </div>
+                      {/* Content */}
+                      <div className="p-5 text-center">
+                        <h3 className="text-xl font-semibold text-white">{item.name}</h3>
+                        <div className="mt-3 h-[2px] w-0 bg-green-400 mx-auto group-hover:w-16 transition-all duration-300"></div>
+                      </div>
+                    </div>
+                  </motion.div>
+                )}
+              </AnimatePresence>
             );
           })}
-
         </div>
 
         {/* Controls */}
@@ -134,7 +108,6 @@ const ProductSlider = () => {
           >
             Prev
           </button>
-
           <button
             onClick={() =>
               setCurrent((prev) => (prev + 1) % products.length)
@@ -144,7 +117,6 @@ const ProductSlider = () => {
             Next
           </button>
         </div>
-
       </div>
     </section>
   );

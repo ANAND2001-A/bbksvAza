@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import brochure from "../assets/6__Athrav-Brochure-2022-Hindi-Final-CMP-5_compressed.pdf";
-import heroImage from "../assets/fertilizer.png"; // replace with your actual image path
+import heroImage from "../assets/images/heropage.png"; // replace with your actual image path
 import { Download } from "lucide-react";
 
 const Hero = () => {
@@ -65,12 +65,13 @@ const Hero = () => {
           initial={{ opacity: 0, x: 80 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.7 }}
-          className="w-full max-w-md mx-auto md:ml-auto mt-8 md:mt-0 rounded-2xl overflow-hidden shadow-2xl"
+          whileHover={{ scale: 1.05, y: -5 }}
+          className="w-full max-w-md mx-auto md:ml-auto mt-8 md:mt-0 rounded-2xl overflow-hidden shadow-2xl cursor-pointer"
         >
           <img
             src={heroImage}
             alt="Hero"
-            className="w-full h-full object-cover rounded-2xl"
+            className="w-auto h-auto object-cover rounded-2xl"
           />
         </motion.div>
 

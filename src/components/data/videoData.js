@@ -1,23 +1,23 @@
 // src/data/videoData.js
 
 // ================= IMPORT VIDEOS =================
-import blOverview from "../../assets/videos/PixVerse_V6_Extend_360P_Ultra_cinematic_commer.mp4";
-import blMachinery from "../../assets/videos/PixVerse_V6_Extend_360P_Ultra_cinematic_commer.mp4";
-import blProduction from "../../assets/videos/PixVerse_V6_Extend_360P_Ultra_cinematic_commer.mp4";
-import blPackaging from "../../assets/videos/PixVerse_V6_Extend_360P_Ultra_cinematic_commer.mp4";
-import blTeam from "../../assets/videos/PixVerse_V6_Extend_360P_Ultra_cinematic_commer.mp4";
+import blOverview from "../../assets/videos/video.mp4";
+import blMachinery from "../../assets/videos/video.mp4";
+import blProduction from "../../assets/videos/video.mp4";
+import blPackaging from "../../assets/videos/video.mp4";
+import blTeam from "../../assets/videos/video.mp4";
 
-import factoryProcess from "../../assets/videos/PixVerse_V6_Extend_360P_Ultra_cinematic_commer.mp4";
-import rawMaterial from "../../assets/videos/PixVerse_V6_Extend_360P_Ultra_cinematic_commer.mp4";
-import productionUnit from "../../assets/videos/PixVerse_V6_Extend_360P_Ultra_cinematic_commer.mp4";
-import qualityLab from "../../assets/videos/PixVerse_V6_Extend_360P_Ultra_cinematic_commer.mp4";
-import finalDispatch from "../../assets/videos/PixVerse_V6_Extend_360P_Ultra_cinematic_commer.mp4";
+import factoryProcess from "../../assets/videos/video.mp4";
+import rawMaterial from "../../assets/videos/video.mp4";
+import productionUnit from "../../assets/videos/video.mp4";
+import qualityLab from "../../assets/videos/video.mp4";
+import finalDispatch from "../../assets/videos/video.mp4";
 
-import sampleDemo1 from "../../assets/videos/PixVerse_V6_Extend_360P_Ultra_cinematic_commer.mp4";
-import sampleDemo2 from "../../assets/videos/PixVerse_V6_Extend_360P_Ultra_cinematic_commer.mp4";
-import fieldUsage from "../../assets/videos/PixVerse_V6_Extend_360P_Ultra_cinematic_commer.mp4";
-import farmerExperience from "../../assets/videos/PixVerse_V6_Extend_360P_Ultra_cinematic_commer.mp4";
-import beforeAfter from "../../assets/videos/PixVerse_V6_Extend_360P_Ultra_cinematic_commer.mp4";
+import sampleDemo1 from "../../assets/videos/video.mp4";
+import sampleDemo2 from "../../assets/videos/video.mp4";
+import fieldUsage from "../../assets/videos/video.mp4";
+import farmerExperience from "../../assets/videos/video.mp4";
+import beforeAfter from "../../assets/videos/video.mp4";
 
 // ================= CATEGORIES =================
 export const videoCategories = [

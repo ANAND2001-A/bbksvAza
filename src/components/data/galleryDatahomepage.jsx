@@ -1,26 +1,26 @@
 // src/data/galleryData.js
 
 // ================= IMPORT ALL IMAGES =================
-import president from "../../assets/images/8 MINISTER PHOTO WITH NAME/1.PRESIDENT.jpeg";
-import primeMinister from "../../assets/images/8 MINISTER PHOTO WITH NAME/1.PRESIDENT.jpeg";
-import chiefMinister from "../../assets/images/8 MINISTER PHOTO WITH NAME/1.PRESIDENT.jpeg";
-import deputyCM from "../../assets/images/8 MINISTER PHOTO WITH NAME/1.PRESIDENT.jpeg";
-import nepalMinister from "../../assets/images/8 MINISTER PHOTO WITH NAME/1.PRESIDENT.jpeg";
+import president from "../../assets/homeimage/1.jpeg";
+import primeMinister from "../../assets/homeimage/1.jpeg";
+import chiefMinister from "../../assets/homeimage/1.jpeg";
+import deputyCM from "../../assets/homeimage/1.jpeg";
+import nepalMinister from "../../assets/homeimage/1.jpeg";
 
-import stateSocialAward from "../../assets/images/8 MINISTER PHOTO WITH NAME/1.PRESIDENT.jpeg";
-import bestSocialActivity from "../../assets/images/8 MINISTER PHOTO WITH NAME/1.PRESIDENT.jpeg";
+import stateSocialAward from "../../assets/homeimage/1.jpeg";
+import bestSocialActivity from "../../assets/homeimage/1.jpeg";
 
-import csrAward from "../../assets/images/8 MINISTER PHOTO WITH NAME/1.PRESIDENT.jpeg";
-import exportExcellence from "../../assets/images/8 MINISTER PHOTO WITH NAME/1.PRESIDENT.jpeg";
-import innovationAward from "../../assets/images/8 MINISTER PHOTO WITH NAME/1.PRESIDENT.jpeg";
-import brandAward from "../../assets/images/8 MINISTER PHOTO WITH NAME/1.PRESIDENT.jpeg";
+import csrAward from "../../assets/homeimage/1.jpeg";
+import exportExcellence from "../../assets/homeimage/1.jpeg";
+import innovationAward from "../../assets/homeimage/1.jpeg";
+import brandAward from "../../assets/homeimage/1.jpeg";
 
-import agricultureMinister from "../../assets/images/8 MINISTER PHOTO WITH NAME/1.PRESIDENT.jpeg";
-import govtOfficialVisit from "../../assets/images/8 MINISTER PHOTO WITH NAME/1.PRESIDENT.jpeg";
-import governorInteraction from "../../assets/images/8 MINISTER PHOTO WITH NAME/1.PRESIDENT.jpeg";
-import cabinetMinister from "../../assets/images/8 MINISTER PHOTO WITH NAME/1.PRESIDENT.jpeg";
-import healthMinister from "../../assets/images/8 MINISTER PHOTO WITH NAME/1.PRESIDENT.jpeg";
-import govtCeremony from "../../assets/images/8 MINISTER PHOTO WITH NAME/1.PRESIDENT.jpeg";
+import agricultureMinister from "../../assets/homeimage/1.jpeg";
+import govtOfficialVisit from "../../assets/homeimage/1.jpeg";
+import governorInteraction from "../../assets/homeimage/1.jpeg";
+import cabinetMinister from "../../assets/homeimage/1.jpeg";
+import healthMinister from "../../assets/homeimage/1.jpeg";
+import govtCeremony from "../../assets/homeimage/1.jpeg";
 
 // ================= CATEGORIES =================
 export const galleryCategories = [

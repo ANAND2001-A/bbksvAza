@@ -1,12 +1,12 @@
 // src/data/productsData.js
 
 // ================= IMPORT PRODUCT IMAGES =================
-import npkFertilizer from "/Users/anandbahaduryadav/Documents/AthravAgricure/Landing-Page/src/assets/productImage/Bags Mock up/Prom Front.jpg";
-import organicCompost from "/Users/anandbahaduryadav/Documents/AthravAgricure/Landing-Page/src/assets/productImage/Bags Mock up/IMG-20230711-WA0105 - Copy.jpg";
-import bioFertilizer from "/Users/anandbahaduryadav/Documents/AthravAgricure/Landing-Page/src/assets/productImage/Bags Mock up/IMG-20230711-WA0105 - Copy.jpg";
-import growthBooster from "/Users/anandbahaduryadav/Documents/AthravAgricure/Landing-Page/src/assets/productImage/Bags Mock up/IMG-20230711-WA0105 - Copy.jpg";
-import micronutrientMix from "/Users/anandbahaduryadav/Documents/AthravAgricure/Landing-Page/src/assets/productImage/Bags Mock up/IMG-20230711-WA0105 - Copy.jpg";
-import cropProtection from "/Users/anandbahaduryadav/Documents/AthravAgricure/Landing-Page/src/assets/productImage/Bags Mock up/IMG-20230711-WA0105 - Copy.jpg";
+import npkFertilizer from "../../assets/productImage/Bags Mock up/4.jpg";
+import organicCompost from "../../assets/productImage/Bags Mock up/4.jpg";
+import bioFertilizer from "../../assets/productImage/Bags Mock up/4.jpg";
+import growthBooster from "../../assets/productImage/Bags Mock up/4.jpg";
+import micronutrientMix from "../../assets/productImage/Bags Mock up/4.jpg";
+import cropProtection from "../../assets/productImage/Bags Mock up/4.jpg";
 
 // 🔥 Helper function
 const getCategoryFromImage = (imagePath) => {
